@@ -23,8 +23,10 @@ function findMatchs(array $words, string $prefix) : array {
 }
 
 
-$words = ['casa','peRRo','gato','nombre','dios','Colegio','iglesia'];
+$words = ['casa','Camino','peRRo','gato','nombre','dios','Colegio','iglesia','comida','palacio',];
+$input = 'ca';
 $matchs = findMatchs($words, $input);
 
-$response = ['matchs' => $matchs];
-echo json_encode($response);
+echo '<pre>';
+print_r($matchs);
+echo '</pre>';
